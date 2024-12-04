@@ -1,4 +1,14 @@
 public class Person {
+    // Main method should be separate and properly structured
+    public static void main(String[] args) {
+        // 创建 Person 对象并打印一些信息
+        Person person = new Person("John Doe", 30, "Male");
+        System.out.println("Name: " + person.getName());
+        System.out.println("Age: " + person.getAge());
+        System.out.println("Gender: " + person.getGender());
+    }
+
+    // 字段声明应该在 main 方法之外
     private String name;
     private int age;
     private String gender;
